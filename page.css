@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --blue-color: #1a1a75;
+    --white-color: #f0f8ff;
+    --violet-color: #7c8cdf;
+    --green-color: #01200f;
+}
+#map-container{
+    width: 40vw;
+    height: 40vw;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 100vh;
+    max-height: 100vh;
+    align-self: flex-start;
+    -webkit-box-shadow: -25px 35px 10px 17px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: -25px 35px 10px 17px rgba(0, 0, 0, 0.4);
+    box-shadow: -25px 35px 10px 17px rgba(0, 0, 0, 0.4);
+}
+#map{
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    width: 100%;
+    background-color: var(--blue-color);
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+    color: var(--white-color);
+}
+.head h1{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: clamp(26px, 2vw, 52px);
+    margin: 0;
+    padding: 0;
+}
+.head ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    gap: 2vw;
+}
+.head ul li{
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(14px, 1vw, 48px);
+    height: 100%;
+}
+#main-list li:hover{
+    cursor: pointer;
+}
+#dropdown{
+    flex-direction: column;
+}
+#dropdown span{
+    gap: 3px;
+}
+#dropdown span img{
+    width: clamp(12px, 0.9vw, 48px);
+    height: auto;
+    min-width: 10px;
+    aspect-ratio: 1/1;
+}
+#dropdown-list{
+    opacity: 0;
+    visibility: hidden;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 3vw);
+    background-color: var(--violet-color);
+    padding: 1vw;
+    transition: 0.2s;
+    border-radius: 1vw;
+    gap: 1vw;
+}  
+#main-list li a{
+    text-decoration: none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+#dropdown-list li a{
+    font-size: 0.9em;
+}
+#dropdown-list li:hover{
+    cursor: pointer;
+}
+#dropdown:hover > #dropdown-list{
+    visibility: visible;
+    transform: translateY(-3vw);
+    opacity: 1;
+}
+.section-styling{
+    width: 100%;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 10vw 15vw;
+    display: flex;
+    flex-direction: column;
+}
+.section-title{
+    text-align: center;
+    font-size: clamp(24px, 7vw, 64px);
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 5vw;
+}
+.smaller-text{
+    font-size: clamp(20px, 4vw, 52px) !important;
+}
+.photo{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2/1.33;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+.section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+.description{
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(12px, 1.2rem, 36px);
+    text-align: center;
+}
+.item{
+    display: flex;
+}
+#user-attractions-container{
+    display: flex;
+    gap: 10px;
+}
+.container-title{
+    color: var(--white-color);
+    font-family: "Roboto Flex", sans-serif;
+    font-size: clamp(16px, 1.8vw, 52px);
+}
+#right-column-info{
+    visibility: hidden;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    width: 30vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: end;
+    gap: 2vw;
+    transform: translateX(50vw);
+    transition: all 0.2s linear;
+    overflow-y: auto;
+}
+#close-button{
+    width: 8vw;
+    height: 3vw;
+    min-width: 100px;
+    min-height: 37.6px;
+    align-self: center;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 2vw;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(16px, 1vw, 36px);
+    transition: all 0.1s linear;
+}
+#close-button:hover{
+    scale: 1.05;
+}
+#about-us{
+    padding-top: 15vw !important;
+}
+.address{
+    font-size: clamp(14px, 1vw, 32px);
+    font-family: "Roboto Flex", sans;
+    
+}
+#link{
+    font-family: "Roboto Mono", sans-serif;
+    font-size: clamp(16px, 2vw, 36px);
+    font-weight: 600;
+    text-align: center; 
+    margin-top: 1vw;
+    transition: all 0.3s;
+}
+#link:hover{
+    cursor: pointer;
+    color: #9e2a2b;
+    scale: 1.1;
+}
+@media screen and (max-width: 992px){
+    #main-list{
+        display: none;
+    }
+    #map-container{
+        align-self: center;
+    }
+    .slick-prev, .slick-next{
+        display: none !important;
+    }
+}
+

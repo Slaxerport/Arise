@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+       
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">    
+
+    <script src = "https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src = "slick-1.8.1/slick/slick.min.js"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=849247d3-af93-4066-963c-0f921f65916b&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+    
+    <div class="main-container">
+        
+            <div class="head">
+                <h1>Arise</h1>
+                <ul id = "main-list">
+                    <li><a href="#about-us">О нас</a></li>
+                    <li id = "dropdown"><span>Достопримечательности <img src="images/down-chevron-svgrepo-com.png" alt=""></span>
+                    <ul id = "dropdown-list">
+                        <li><a href="#main-attractions">Основные достопримечательности Октябрьского района</a></li>
+                        <li><a href="#user-attractions">Интересные места для жителей Октябрьского района</a></li>
+                        <li><a href="#vote">Голосование за новую достопримечательность</a></li>
+                    </ul>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        
+        
+        <section id = "about-us" class = "section-styling">
+            <h1 class = "section-title">О нас</h1>
+                <div id = "portfolios">
+                    <div class="item">
+                        <div class="section-container">
+                            <div class="photo">
+                                <img src="https://wallpapercat.com/w/full/6/7/0/2015793-2000x1333-desktop-hd-walter-white-wallpaper.jpg" alt="">
+                            </div>
+                            <h1 class="container-title">
+                                Lorem Ipsum
+                            </h1>
+                            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi sint laboriosam perspiciatis, nemo minima odio sunt nisi ea aliquid ex earum odit a mollitia aut unde et tempora error!
+                            Sint dicta molestiae, architecto, aperiam quam iusto officia beatae aliquam voluptate neque atque amet maiores distinctio ad dolorum eum necessitatibus suscipit, animi accusamus inventore. Quaerat amet quae deserunt maxime quisquam.
+                            Fugiat doloremque inventore pariatur amet eos nesciunt soluta aut eveniet dolorem. Aspernatur neque voluptas sed quasi fugit eaque, nostrum quae aliquam minima amet praesentium necessitatibus esse, reprehenderit blanditiis sit assumenda!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="section-container">
+                            <div class="photo">
+                                <img src="https://wallpapercat.com/w/full/6/7/0/2015793-2000x1333-desktop-hd-walter-white-wallpaper.jpg" alt="">
+                            </div>
+                            <h1 class="container-title">
+                                Lorem Ipsum
+                            </h1>
+                            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi sint laboriosam perspiciatis, nemo minima odio sunt nisi ea aliquid ex earum odit a mollitia aut unde et tempora error!
+                            Sint dicta molestiae, architecto, aperiam quam iusto officia beatae aliquam voluptate neque atque amet maiores distinctio ad dolorum eum necessitatibus suscipit, animi accusamus inventore. Quaerat amet quae deserunt maxime quisquam.
+                            Fugiat doloremque inventore pariatur amet eos nesciunt soluta aut eveniet dolorem. Aspernatur neque voluptas sed quasi fugit eaque, nostrum quae aliquam minima amet praesentium necessitatibus esse, reprehenderit blanditiis sit assumenda!</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id = "main-attractions" class = "section-styling">
+            <h1 class = "section-title smaller-text">Основные достопримечательности Октябрьского района</h1>
+            <div class="main-container">
+                <div id="places">
+                    <div class="item">
+                        <div class="section-container">
+                            <div class="photo">
+                                <img src="images\orig.jpg" alt="">
+                            </div>
+                            <h1 class = "container-title">Гимназия №74</h1>
+                            <div class="address">
+                                ул. Артиллеристов, 15
+                            </div>
+                            <div class="description">
+                                Среднее учебное заведение в Октябрьском районе Минска (Республика Беларусь).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="section-container">
+                            <div class="photo">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Jj2Wcl5IHxfQAKihXq7qBHztuDyT6S0NZQ&s" alt="">
+                            </div>
+                            <h1 class = "container-title">Lorem Ipsum</h1>
+                            <div class="address">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <div class="description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, exercitationem excepturi debitis repudiandae explicabo aliquid dolorem nostrum veritatis eius magnam obcaecati non adipisci ullam voluptatibus cumque natus aspernatur voluptas sed.
+                                Vero voluptates doloribus minus pariatur exercitationem repellat, animi facilis suscipit vel cumque provident officiis soluta facere officia corporis incidunt assumenda alias! Sapiente iste ad vitae! Ipsum omnis ratione sit dolorem?
+                                Quo provident autem fuga quidem laudantium adipisci quam alias non praesentium! Dolor fugit magnam dolorem iure unde qui saepe dignissimos dolores? Libero at animi amet ratione? Blanditiis fuga libero ullam!
+                                Error pariatur, cum voluptas dignissimos harum, in laborum numquam similique expedita, esse aperiam porro magni. Consequatur dolor quas assumenda atque! Sapiente tempora culpa porro deleniti neque iste deserunt similique a!
+                                Temporibus nemo ratione veniam quam, veritatis libero. Nihil nesciunt quod dicta cumque, debitis cupiditate facilis commodi est consectetur, doloribus tenetur facere laboriosam assumenda! Temporibus rem modi facilis enim, facere ratione?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "user-attractions" class = "section-styling">
+            <div class="section-container">
+                <h1 class = "section-title smaller-text">Интересные места для жителей Октябрьского района</h1>
+                <div id="map-container">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+
+        <div id = "right-column-info">
+            <div class="photo">
+                <img src="" alt="">
+            </div>
+            <h1 class="container-title">
+                
+            </h1>
+            <div class="address">
+
+            </div>
+            <div class="description">
+                
+            </div>
+            <button type = "button" id = "close-button">Закрыть</button>
+        </div>
+
+        <section id="vote" class = "section-styling">
+            <div class="main-container">
+                <h1 class="section-title smaller-text">
+                    Проходи опрос и предлагай понравившееся тебе место!
+                </h1>
+                <div id="link">Перейти к опросу</div>
+            </div>
+            
+        </section>
+
+
+
+    </div>
+
+    <script type = "text/javascript" src = "page.js"></script>
+</body>
+</html>
