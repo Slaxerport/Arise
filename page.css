@@ -51,7 +51,7 @@ h1, h2, h3, h4{
     align-items: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: clamp(26px, 2vw, 52px);
+    font-size: clamp(26px, 2vw, 1000px);
     margin: 0;
     padding: 0;
 }
@@ -68,7 +68,7 @@ h1, h2, h3, h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(14px, 1vw, 48px);
+    font-size: clamp(14px, 1.4vw, 1000px);
     height: 100%;
 }
 #main-list li:hover{
@@ -81,7 +81,7 @@ h1, h2, h3, h4{
     gap: 3px;
 }
 #dropdown span img{
-    width: clamp(12px, 0.9vw, 48px);
+    width: clamp(12px, 0.9vw, 1000px);
     height: auto;
     min-width: 10px;
     aspect-ratio: 1/1;
@@ -99,7 +99,7 @@ h1, h2, h3, h4{
     transition: 0.2s;
     border-radius: 1vw;
     gap: 1vw;
-}  
+} 
 #main-list li a{
     text-decoration: none;
     color: var(--white-color);
@@ -127,17 +127,18 @@ h1, h2, h3, h4{
 }
 .section-title{
     text-align: center;
-    font-size: clamp(24px, 7vw, 64px);
+    font-size: clamp(24px, 5vw, 1000px);
     font-family: "Noto Sans", sans-serif;
     margin-bottom: 5vw;
 }
 .smaller-text{
-    font-size: clamp(20px, 4vw, 52px) !important;
+    font-size: clamp(20px, 3vw, 1000px) !important;
 }
 .photo{
-    width: 100%;
+    margin: 0 auto;
+    width: 40%;
     height: auto;
-    aspect-ratio: 2/1.33;
+    min-width: 200px;
 }
 .photo img{
     width: 100%;
@@ -151,7 +152,7 @@ h1, h2, h3, h4{
 }
 .description{
     font-family: "Open Sans", sans-serif;
-    font-size: clamp(12px, 1.2rem, 36px);
+    font-size: clamp(12px, 1.5vw, 1000px);
     text-align: center;
 }
 .item{
@@ -164,7 +165,7 @@ h1, h2, h3, h4{
 .container-title{
     color: var(--white-color);
     font-family: "Roboto Flex", sans-serif;
-    font-size: clamp(16px, 1.8vw, 52px);
+    font-size: clamp(16px, 1.8vw, 1000px);
 }
 #right-column-info{
     visibility: hidden;
@@ -195,7 +196,7 @@ h1, h2, h3, h4{
     border: none;
     border-radius: 2vw;
     font-family: "Poppins", sans-serif;
-    font-size: clamp(16px, 1vw, 36px);
+    font-size: clamp(16px, 1vw, 1000px);
     transition: all 0.1s linear;
 }
 #close-button:hover{
@@ -205,13 +206,13 @@ h1, h2, h3, h4{
     padding-top: 15vw !important;
 }
 .address{
-    font-size: clamp(14px, 1vw, 32px);
+    font-size: clamp(14px, 1.5vw, 1000px);
     font-family: "Roboto Flex", sans;
     
 }
 #link{
     font-family: "Roboto Mono", sans-serif;
-    font-size: clamp(16px, 2vw, 36px);
+    font-size: clamp(16px, 2vw, 1000px);
     font-weight: 600;
     text-align: center; 
     margin-top: 1vw;
@@ -231,6 +232,11 @@ h1, h2, h3, h4{
     }
     .slick-prev, .slick-next{
         display: none !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .description{
+        font-size: clamp(14px, 1.8vw, 1000px);
     }
 }
 
