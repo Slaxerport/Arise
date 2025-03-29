@@ -66,7 +66,7 @@ $(document).ready(function(){
 });
 
 document.getElementById("link").addEventListener("click", function(){
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSeGFXeBhgPNDMnpZl8Dr8W29UGH6oF0c-Zhdff0WIUP124jvw/viewform", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLScovH4g8Yxxi3QcU0fqoTv_GEGZRaqVOCIHJ6smQGVkDg_BZQ/viewform?usp=header", "_blank");
 })
 
 
